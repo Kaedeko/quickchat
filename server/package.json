@@ -5,5 +5,12 @@
   "repository": "git@github.com:Kaedeko/quickchat.git",
   "author": "Kaedeko",
   "license": "MIT",
-  "private": true
+  "private": true,
+  "dependencies": {
+    "ws": "^7.0.0"
+  },
+  "scripts": {
+    "build": "parcel build index.js --target node --bundle-node-modules",
+    "start": "parcel index.js --target node"
+  }
 }
